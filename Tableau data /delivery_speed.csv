@@ -1,0 +1,5 @@
+delivery_speed,orders,pct
+"Normal (8-14 days)",37968,39.4
+"Fast (1-7 days)",30694,31.8
+"Slow (15-30 days)",23500,24.4
+"Very Slow (30+ days)",4293,4.5

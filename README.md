@@ -52,3 +52,32 @@ one of the fastest e-commerce growth curves in Latin America.
 - Customer segmentation using CASE + subqueries
 
 ## Project structure
+
+
+
+
+
+
+
+
+
+
+## How to run
+1. Import 3 CSVs into MySQL as `olist_ecommerce` database
+2. Run queries in `queries.sql` sequentially
+3. View live dashboard at the Tableau link above
+
+## Data source
+Olist Brazilian E-Commerce Dataset — Kaggle
+3 tables: customers_dataset, orders_dataset, order_items_dataset
+96,461 orders · Sep 2016 — Sep 2018
+
+## Limitations & future work
+- Only 3 of 9 Olist tables used — product categories and
+  payment methods would add significant depth
+- Retention model: cohort analysis would show exactly
+  when customers churn
+- Predictive model: delivery delay predictor using
+  seller location and product weight
+
+*Built by Shaka Uday | Data Analyst portfolio | 2026*

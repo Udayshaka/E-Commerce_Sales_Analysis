@@ -1,131 +1,54 @@
-# E-Commerce_Sales_Analysis
-# 📊 E-Commerce Sales Analysis
+# E-Commerce Sales Analysis
 
-## 📌 Project Overview
+End-to-end e-commerce analytics using SQL — revenue trends, 
+delivery performance, geographic analysis & customer segmentation
 
-This project analyzes an **E-commerce sales dataset** to extract meaningful business insights.
-The goal is to demonstrate practical **Data Analyst skills** including **SQL querying, data analysis, and dashboard visualization**.
+## 🔗 Live Dashboard
+[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/shaka.uday/viz/Olist-Ecommerce-Analysis-Shaka-Uday/Olist_Sales_Dashboard)
 
-The analysis was performed using **SQL (MySQL)** for data exploration and **Power BI** for creating an interactive dashboard.
+## Key findings
 
----
+| Metric                        | Value                          |
+|-------------------------------|--------------------------------|
+| Total orders                  | 96,461                         |
+| Unique customers              | 93,342                         |
+| Total revenue                 | R$ 13,219,045                  |
+| Avg item price                | R$ 119.98                      |
+| Top state by revenue          | São Paulo — R$ 5,065,805 (38%) |
+| Normal delivery (8-14 days)   | 39.4% of orders                |
+| Fast delivery (1-7 days)      | 31.8% of orders                |
+| Very slow delivery (30+ days) | 4.5% of orders                 |
+| One-time buyers               | 97% of customers               |
 
-## 🎯 Objectives
+## Key insights
 
-* Analyze overall sales performance
-* Identify customer distribution by location
-* Calculate key business metrics such as revenue and order count
-* Build a visual dashboard for business decision making
+**1 — Geographic concentration is extreme**
+São Paulo alone drives 38% of total revenue — 3x more than
+Rio de Janeiro (R$1.75M) in second place. Any growth strategy
+must prioritise SP infrastructure while developing RJ and MG.
 
----
+**2 — Retention is the biggest problem**
+97% of customers never return for a second order. Only 0.2%
+are loyal (3+ orders). This points to a critical gap in
+post-purchase engagement and loyalty programmes.
 
-## 🛠 Tools & Technologies
+**3 — Delivery speed needs improvement**
+28.9% of orders take longer than 15 days. 4.5% take over
+30 days. In an era of same-day delivery expectations this
+directly drives the low retention rate.
 
-* **SQL (MySQL)** – Data querying and analysis
-* **Power BI** – Data visualization and dashboard
-* **CSV Dataset** – Data source
-* **GitHub** – Project documentation and version control
+**4 — Revenue grew 7,000x in 14 months**
+From R$134 in September 2016 to R$987,648 in November 2017 —
+one of the fastest e-commerce growth curves in Latin America.
 
----
+## Tech stack
+`MySQL` `SQL` `Tableau Public` `Excel`
 
-## 📂 Project Structure
+## SQL highlights
+- 15 queries across 3 joined tables (96,000+ rows)
+- Window functions: LAG, SUM OVER, RANK, NTILE
+- CTEs for month-over-month growth calculation
+- Delivery performance bucketing with DATEDIFF
+- Customer segmentation using CASE + subqueries
 
-```
-E-Commerce_Sales_Analysis
-│
-├── dataset
-│   └── ecommerce_dataset.zip
-│
-├── sql
-│   └── queries.sql
-│
-├── images
-│   └── dashboard_preview.png
-│
-└── README.md
-```
-
----
-
-## 📊 Key Performance Indicators (KPIs)
-
-The dashboard focuses on the following metrics:
-
-* Total Revenue
-* Total Orders
-* Total Customers
-* Average Order Value
-
----
-
-## 📈 Dashboard Insights
-
-The Power BI dashboard provides insights such as:
-
-* Revenue trends from order items
-* Customer distribution by state/city
-* Total order volume
-* Sales performance overview
-
-These insights help understand **customer behavior and overall business performance**.
-
----
-
-## 🗄 SQL Analysis
-
-SQL queries were used to perform analysis on the dataset including:
-
-* Counting total orders
-* Calculating total revenue
-* Customer distribution analysis
-* Order level insights
-
-Example SQL query:
-
-```sql
-SELECT COUNT(DISTINCT order_id) AS total_orders
-FROM orders;
-```
-
-All SQL queries are available in:
-
-```
-sql/queries.sql
-```
-
----
-
-
-## 📌 Dataset
-
-The dataset contains information about:
-
-* Customers
-* Orders
-* Order items
-* Purchase timestamps
-
-Due to GitHub file size limitations, the dataset is uploaded as a **compressed file**.
-
----
-
-## 🚀 Business Value
-
-This project demonstrates how data analysis can help businesses:
-
-* Monitor sales performance
-* Understand customer distribution
-* Identify revenue trends
-* Support data-driven decisions
-
----
-
-## 👤 Author
-
-**Shaka Uday**
-B.Tech – Computer Science (AI & ML)
-Aspiring Data Analyst
-
-GitHub:
-https://github.com/Udayshaka
-
+## Project structure
